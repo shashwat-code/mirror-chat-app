@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+.chatBox{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  
+}
+.chatBoxHeader{
+  display: flex;
+  background-color: rgb(69, 173, 168) /* #3F0E40 */;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+  border-bottom: 2px solid grey;
+  height: 10%;
+  width: 100%;
+}
+.chatBoxHeader >img{
+  margin-left: 1%;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  object-fit: contain;
+  background-color: aliceblue;
+}
+.dark-chatBoxheader{
+  background-color: rgb(50, 50, 50);
+}
+.chatBoxHeaderAvatarName {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 1% ;
+}
+.chatBoxHeaderAvatarName   :hover{
+
+  text-decoration: underline;
+
+}
+.toggle-dark, .toggle-light {
+  display: flex;
+  padding: 3px;
+  border-radius: 4px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+ 
+}
+.toggle-dark {
+  background-color: rgb(50, 50, 50); /*almost white*/ 
+}
+.toggle-light {
+  background-color: rgb(250, 250, 250); /*dark gray*/ 
+}
+.dark-mode, .light-mode {
+  margin: 3px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50px;
+  text-align: center;
+}
+.dark-mode {
+  background-color: rgb(50, 50, 50);
+  color: rgb(250, 250, 250);
+  font-family: 'Comfortaa', cursive;
+}
+.light-mode {
+  background-color: rgb(250, 250, 250);
+  color: rgb(50, 50, 50);
+  font-family: 'Comfortaa', cursive;
+}
+.chatBoxBody{
+  max-height: 80%;
+  width: 97%;
+  
+
+
+}
+
+.chatBoxBody {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  overflow-y: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  
+}
+.dark-chatBoxBody{
+  background-color: rgb(50, 50, 50);
+}
+ 
+  .userMessage {}
+
+    #userInputMessage {
+      background: rgb(69, 173, 168);
+      color: white;
+    }
+  
+  .chatBotResponse {
+    text-align: right;}
+
+    #chatBotResponseMessage {
+      background: #eee;
+    }
+  
+  .message {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 20px;
+  }
+
+.chatBoxInput{
+  display: flex;
+  flex-direction: column;
+  height: 5%;
+  border-bottom:  2px solid grey;
+  padding: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  font-family: 'Comfortaa', cursive;
+  border-bottom: 0;
+}
+.dark-chatBoxInput{
+  background: rgb(50, 50, 50); 
+}
+.userInput{
+  height: 100%;
+  margin-right: 2%;
+  width: 90%;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 10px;
+  overflow-y: scroll;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.sendButton{
+  margin-left: 1%;
+  width: 6%;
+  color: white;
+  background-color: rgb(69, 173, 168);
+  font-family: 'Comfortaa', cursive;
+  border-radius: 10px;
+}
