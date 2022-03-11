@@ -102,6 +102,7 @@
 
     #userInputMessage {
       background: rgb(69, 173, 168);
+      word-wrap: break-word;
       color: white;
     }
   
@@ -109,14 +110,15 @@
     text-align: right;}
 
     #chatBotResponseMessage {
-      background: #eee;
+      background: white;
+      box-shadow: 6px 4px 10px black;
     }
   
   .message {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 10px;
-    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Comfortaa', cursive; */
     margin-bottom: 20px;
   }
 
@@ -128,7 +130,8 @@
   padding: 20px;
   background: #eee;
   border: 1px solid #ccc;
-  font-family: 'Comfortaa', cursive;
+  letter-spacing: 5px;
+  /* font-family: 'Comfortaa', cursive; */
   border-bottom: 0;
 }
 .dark-chatBoxInput{
@@ -149,6 +152,6 @@
   width: 6%;
   color: white;
   background-color: rgb(69, 173, 168);
-  font-family: 'Comfortaa', cursive;
+  /* font-family: 'Comfortaa', cursive; */
   border-radius: 10px;
 }
